@@ -4067,3 +4067,27 @@
 2020-06-28T17:16:42.375Z [grades-control-api] info: POST /grade - {"id":26,"student":"Neal Morse","subject":"02 - Node","type":"Desafio","value":35,"timestamp":"2020-06-28T17:16:42.375Z"}
 2020-06-28T17:16:42.377Z [grades-control-api] info: POST /grade - {"id":27,"student":"Neal Morse","subject":"03 - React","type":"Desafio","value":37,"timestamp":"2020-06-28T17:16:42.376Z"}
 2020-06-28T17:16:47.206Z [grades-control-api] info: GET /grade
+2020-06-28T17:27:34.601Z [grades-control-api] info: GET /grade
+2020-06-28T17:28:54.675Z [grades-control-api] info: GET /grade
+2020-06-28T17:31:22.266Z [grades-control-api] info: GET /grade
+2020-06-28T17:31:31.710Z [grades-control-api] info: GET /grade
+2020-06-28T17:32:45.609Z [grades-control-api] info: GET /grade
+2020-06-28T17:33:09.760Z [grades-control-api] info: GET /grade
+2020-06-28T17:33:21.789Z [grades-control-api] info: GET /grade
+2020-06-28T17:33:28.567Z [grades-control-api] info: GET /grade
+2020-06-28T17:33:59.998Z [grades-control-api] info: GET /grade
+2020-06-28T17:36:54.813Z [grades-control-api] info: GET /grade
+2020-06-28T17:37:02.322Z [grades-control-api] info: GET /grade
+2020-06-28T17:37:25.961Z [grades-control-api] info: GET /grade
+2020-06-28T17:38:07.866Z [grades-control-api] info: GET /grade
+2020-06-28T17:38:13.213Z [grades-control-api] info: GET /grade
+2020-06-28T17:38:24.241Z [grades-control-api] info: GET /grade
+2020-06-28T17:39:04.966Z [grades-control-api] info: GET /grade
+2020-06-28T17:39:09.260Z [grades-control-api] info: GET /grade
+2020-06-28T17:42:19.481Z [grades-control-api] info: GET /grade
+2020-06-28T17:43:30.419Z [grades-control-api] info: GET /grade
+2020-06-28T17:44:13.651Z [grades-control-api] info: GET /grade
+2020-06-28T17:53:02.677Z [grades-control-api] info: GET /grade
+2020-06-28T17:53:20.874Z [grades-control-api] info: GET /grade
+2020-06-28T17:54:38.621Z [grades-control-api] info: GET /grade
+2020-06-28T17:55:27.260Z [grades-control-api] info: GET /grade

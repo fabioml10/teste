@@ -24,7 +24,7 @@ const GRADE_VALIDATION = [
 
 async function getAllGrades() {
   const res = await axios.get(API_URL)
-  const grades = res.data.grades.map(grade => {
+  let grades = res.data.grades.map(grade => {
     return {
       ...grade,
       studentLowerCase: grade.student.toLowerCase(),
@@ -47,13 +47,12 @@ async function getAllGrades() {
   allGradeTypes = Array.from(allGradeTypes)
 
   let maxId = -1
-  getAllGrades.forEach(grade => {
+  allGradeTypes.forEach(grade => {
     if (grade.id > maxId) {
       maxId = grades.id
     }
   })
 
-  let nextId = grades.length + 1
   const allCombinations = []
   allStudents.forEach(student => {
     allSubjects.forEach(subject => {
@@ -73,7 +72,7 @@ async function getAllGrades() {
     })
     if (!hasItem) {
       grades.push({
-        id: nextId++,
+        id: maxId,
         student,
         studentLowerCase: student.toLowerCase(),
         subject,
@@ -86,9 +85,9 @@ async function getAllGrades() {
     }
   })
 
-  grades.sort((a, b) => a.typeLowerCase.localCompare(b.typeLowerCase))
-  grades.sort((a, b) => a.subjectLowerCase.localCompare(b.subjectLowerCase))
-  grades.sort((a, b) => a.studentLowerCase.localCompare(b.studentLowerCase))
+  // grades.sort((a, b) => a.typeLowerCase.localCompare(b.typeLowerCase))
+  // grades.sort((a, b) => a.subjectLowerCase.localCompare(b.subjectLowerCase))
+  // grades.sort((a, b) => a.studentLowerCase.localCompare(b.studentLowerCase))
 
   return grades
 }

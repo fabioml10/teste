@@ -2,9 +2,9 @@ import React from 'react'
 import Edit from '../Button/Edit'
 import Delete from '../Button/Delete'
 
-export default function Table() {
+export default function Table({ grades }) {
   return (
-    <table className="highlight">
+    <table className="striped highlight">
       <thead>
         <tr>
           <th>Aluno</th>
@@ -16,14 +16,16 @@ export default function Table() {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Nome</td>
-          <td>Nome da Disciplina</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-          <td><Edit /></td>
-          <td><Delete /></td>
-        </tr>
+        {grades.map(({ id, subject, student, type, value, isDeleted }) => {
+          return (<tr key={id}>
+            <td>{student}</td>
+            <td>{subject}</td>
+            <td>{type}</td>
+            <td>{value}</td>
+            <td><Edit /></td>
+            <td><Delete /></td>
+          </tr>)
+        })}
       </tbody>
     </table>
   )
